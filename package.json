@@ -4,8 +4,7 @@
   "description": "this is the webpacker course that comes from the udemy",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "glute": "webpack"
+    "build": "webpack"
   },
   "keywords": [],
   "author": "",

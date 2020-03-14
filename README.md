@@ -66,10 +66,35 @@ to work with the webpack it requires the package.json and this can be obtained b
  $ touch webpack.config.js
  # this command creates the configuration file for the webpack that is required for the webpack to help in the path creation like where should the files that are compiled need to be placed .
  module.exports = {
-  entry: './src/index.js' // this indicates the entry point file
-  output: {
-    filename: bundle.js,
-    path: './dist/'  
+    // this is the entry point of the module
+    entry: "./src/scripts/app.js",//path relative to this file
+    output: {
+        filename: "./dist/app.bundle.js"//path relative to this file
+    }
   }
- }
 ```
+
+
+Now when i have made some changes in the webpack.config.json this resultedd in the correct output saying 
+
+```
+> webpack_course@1.0.0 build /home/prathap/Documents/webpack_course
+> webpack
+
+Hash: 08f375c167fd2287aaac
+Version: webpack 4.42.0
+Time: 307ms
+Built at: 03/14/2020 4:00:59 PM
+               Asset        Size  Chunks             Chunk Names
+./dist/app.bundle.js  1010 bytes       0  [emitted]  main
+Entrypoint main = ./dist/app.bundle.js
+[0] ./src/scripts/app.js + 1 modules 307 bytes {0} [built]
+    | ./src/scripts/app.js 66 bytes [built]
+    | ./src/helloworld.js 241 bytes [built]
+
+WARNING in configuration
+The 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to 'development' or 'production' to enable defaults for each environment.
+You can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/configuration/mode/
+```
+
+this generates the hash that is the unique and for the every file that  
