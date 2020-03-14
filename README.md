@@ -114,3 +114,24 @@ Now we will make use of the file-loader
 ```
  $ npm install file-loader --save-dev
 ```
+
+
+```
+// webpack.config.js
+
+
+> webpack_course@1.0.0 build /home/prathap/Documents/webpack_course
+> webpack
+
+Hash: 4d3615d23c73961b14cd
+Version: webpack 4.42.0
+Time: 266ms
+Built at: 03/14/2020 7:29:53 PM
+        Asset      Size  Chunks             Chunk Names
+app.bundle.js  14.9 KiB       0  [emitted]  main
+Entrypoint main = app.bundle.js
+[0] ./src/scripts/app.js 126 bytes {0} [built]
+    + 5 hidden modules
+
+```
+
