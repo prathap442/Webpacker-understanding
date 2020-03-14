@@ -1,3 +1,6 @@
+# important 
+repo: https://github.com/vp-online-courses/webpack-tutorial
+
 this is the webpacker course that comes from the udemy 
 
 ```
@@ -98,3 +101,16 @@ You can also set it to 'none' to disable any default behavior. Learn more: https
 ```
 
 this generates the hash that is the unique and for the every file that  
+
+
+# What are the webpack loaders?
+  the webpack loaders are the javascript libraries that help the webpack not only to compress the javascripts into the bundled file(app.bundle.js) but also the html and css and images
+
+* Looking at how to handle images with the loader of the image into the .
+
+Now we will make use of the file-loader
+
+
+```
+ $ npm install file-loader --save-dev
+```

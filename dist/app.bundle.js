@@ -77,7 +77,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "dist";
 /******/
 /******/
 /******/ 	// Load entry module and return exports
@@ -91,8 +91,11 @@
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _helloworld_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var _image_builder_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 
 console.log(Object(_helloworld_js__WEBPACK_IMPORTED_MODULE_0__["default"])());
+
+console.log(Object(_image_builder_js__WEBPACK_IMPORTED_MODULE_1__["default"])());
 
 /***/ }),
 /* 1 */
@@ -109,6 +112,22 @@ const helloworld = () => {
 // we use this es6 syntax as follows
 
 /* harmony default export */ __webpack_exports__["default"] = (helloworld);
+
+/***/ }),
+/* 2 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function image_builder(){
+  let div = document.createElement('img');
+  div.alt = "arumugaa";
+  div.src = "./shot1.png";
+  div.id = "howle_image"
+  document.querySelector('body').appendChild(div);
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (image_builder);
 
 /***/ })
 /******/ ]);
